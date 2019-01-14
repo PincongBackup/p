@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="/static/favicon6.ico" />
+<title>
+    为什么那么多人愿意无偿分享知识？
+ - 品葱  - 在自由的阳光下各抒己见 </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="keywords" content="心理学,社会,">
+<meta name="description" content="为什么那么多人愿意无偿分享知识？">
+<meta name="google-site-verification" content="rTeUW_LQcYyXB46Ueal4LebsM48FzR4usQ2lUvjLY0E" />
+
+
+<link rel="stylesheet" href="/static/lib/bootstrap.3.3.7.min.css">
+<link rel="stylesheet" href="/static/lib/font-awesome.4.3.0.min.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/static/lib/mentions.css">
+
+
+<script src="/static/lib/jquery.2.1.0.min.js"></script>
+<script src="/static/lib/bootstrap.3.0.3.min.js"></script>
+<script src="/static/lib/chinese_convert.js"></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js' type='text/javascript'></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="/static/lib/mention.js"></script>
+<script type="text/javascript" src="/static/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+<link rel="stylesheet" href="/static/lib/jquery.mCustomScrollbar.min.css">
+<script type="text/javascript" src="/static/lib/summernote/summernote.js"></script>
+<script type="text/javascript" src="/static/lib/summernote/lang/summernote-zh-CN.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="/static/lib/prism/prism.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+<link rel="stylesheet/less" type="text/less" href="/static/pc.style.less?x=289">
+<script src="/static/lib/less-1.6.1.min.js" type="text/javascript"></script>
+<script src="/static/lib/prism/prism.js" type="text/javascript"></script>
+<script src="/static/lib/blazy/blazy.min.js" type="text/javascript"></script>
+<script src="/static/lib/magnific/magnific.min.js" type="text/javascript"></script>
+<link href="/static/lib/magnific/magnific.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.js"></script>
+<script src="/static/lib/select2-3.4.5/select2_locale_zh-CN.js" type="text/javascript"></script>
+<script src="/static/pc.js?x=289" type="text/javascript"></script>
+<script type="application/javascript">
+        
+            USER_ID = null;
+            USER_NAME = null;
+        
+        TITLE_SEARCH_URL = "/local/search/title/"
+        POST_DISPLAY_URL = "/p/"
+    </script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126263859-1"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-126263859-1');
+    </script>
+</head>
+<body class="body">
+
+<div class="nav_bg">
+<div class="nav_bar">
+<div class="row visible-sm visible-xs">
+<div class="col-xs-4" style="width: 25%; height: 43px; padding: 0px;">
+<a href="/">
+<a href="/"><img style="width:87px; height: 40px;" src="/static/pc.logo.png"></a>
+</a>
+</div>
+<div class="col-xs-4" style="width: 55%; padding: 0px;">
+<form class="form-inline" role="form" action="/local/search/page/">
+<div class="col-xs-9" style="width: 70%;margin-top: 5px;padding: 0;">
+<input type="text" name="q" class="form-control" value="" placeholder="搜索..." style="width: 100%;">
+</div>
+<div class="col-xs-1" style="margin-top: 5px;padding-left: 3px;">
+<button type="submit" class="btn btn-cancel" style="width: 43px;padding-left: 6px;">搜索</button>
+</div>
+</form>
+</div>
+<div class="col-xs-4" style="width: 20%; padding: 4px; font-size: 18px;">
+<a href="/p/new/post/" class="navitem btn " style="color: #fff;">
+<span>提问</span>
+</a>
+</div>
+
+</div>
+<div class="nav-status-bar visible-sm visible-xs">
+<div class="col-xs-5  mid  nav-item" style="width: 26%;padding-left: 10px;">
+<a href="/i/">
+<div class="nav-wd">新鲜事</div>
+</a>
+</div>
+<div class="col-xs-3 mid  nav-item" style="width: 17%;padding-left: 0;">
+<a href="/t">
+<div class="nav-wd">探索</div>
+</a>
+</div>
+<div class="col-xs-4 " style="float: right;width: 20%; ">
+<div class="btn-group pull-right">
+<div>
+<a class="active" role="button" href="/accounts/signup/" style="color: #222;">
+注册
+</a>
+</div>
+</div>
+</div>
+<div class="col-xs-4 " style="float: right;width: 20%;">
+<div class="btn-group pull-right">
+<div>
+<a class="active" role="button" href="/site/login/" style="color: #222;">
+登录
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row visible-lg visible-md">
+<div class="col-md-12" id="navbar">
+<a href="/" class="col-lg-3 visible-lg" id="logo" style="background-image: url(/static/pc.logo.png); height: 100%;"></a>
+<div class="col-md-3 visible-md text-center" style="width: 11%;">
+<a href="/">
+<a href="/"><img style="width:90px; height: 40px;" src="/static/pc.logo.png"></a>
+</a>
+</div>
+<div class="col-sm-1 mid  nav-item">
+<a href="/">
+<div>首页</div>
+</a>
+</div>
+<div class="col-sm-1 mid  nav-item">
+<a href="/t">
+<div>探索</div>
+</a>
+</div>
+<div class="col-sm-1 searchbar_area">
+<div class="col-md-10 col-md-offset-2 searchbar">
+<div class="col-md-8">
+<select type="text" id="searchform" style="width:100%"></select>
+</div>
+<div class="visible-lg visible-md ">
+<a role="button" class="btn-xs searchbar-fulltxt" href="/local/search/page/" style="line-height:35px;">
+全局搜索</a>
+</div>
+</div>
+</div>
+<div class="col-sm-1 mid  nav-item">
+<a href="/site/login/">
+ <span>登录</span>
+</a>
+</div>
+<div class="col-sm-1 mid  nav-item">
+<a href="/accounts/signup/">
+<span>注册</span>
+</a>
+</div>
+<div class="col-sm-1 mid newpost pull-right nav-item">
+<a href="/p/new/post/" class="navitem">
+<span><i class="fa fa-edit fa-2x"></i></span>
+<span>发起提问</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container" id="content">
+<div style="height: 30px;margin-top: 15px;">
+<div id="translateLink" class="btn-gray" style="float: right;font-size: 11px;cursor: pointer;">简体</div>
+</div>
+<div class="notif-box "></div>
+<div class="row" itemscope itemtype="http://schema.org/QAPage">
+<div class="col-xs-12 col-md-9">
+<div id="post-details" cmt-page="1">
+<span itemscope itemtype="http://schema.org/Question">
+<div class="post-body-wrap post-body 正常 post-body-wrap-285 clearfix" data-mainpost="285" data-type=0 style="margin-top: 5px;">
+<div class="tags clearfix" style="margin-bottom:0.5em;">
+<a class="tag" href="/t/心理学/?t=1">心理学</a>
+<a class="tag" href="/t/社会/?t=1">社会</a>
+</div>
+<div class="post-title title" style="font-size: 19px !important; padding: 5px;"><span itemprop="name">为什么那么多人愿意无偿分享知识？</span></div>
+<div class="post vote-box visible-lg visible-md" data-post_id="285">
+<div class="vote mark - tip sym-bookmark off" data-toggle="tooltip" data-placement="top" data-type="bookmark" title="收藏" data-post-type="0" data-post_id="285">
+<i class="fa fa-star-o fa-2x"></i>
+</div>
+
+</div>
+<div>
+<a name="285"></a>
+<div class="content post-content" data="285" style="margin-bottom: 2px;">
+<div class="post-mod-agree">
+4人赞同 7人关注
+</div>
+<div class="post-list-content">
+<div class="post-text-wrap post-text-wrap-detail">
+<div class="post-text post-text-detail" itemprop="text" post-list-type="detail">
+<p>为什么那么多人愿意无偿分享知识？<br></p>
+</div>
+</div>
+<div class="gradient">
+<div class="read-more">
+<div class="read-more-text" ">阅读更多<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+</div>
+</div>
+<div class="post-text-foldup">
+<span>收起</span>
+<i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+</div>
+<a name="cmt_area_285"></a>
+<div class="clearfix">
+<div class="post-action" data='285'>
+<div class="post-action-time">
+<span class="userlink muted btn-gray">
+<span class="btn-gray" itemprop="dateCreated" content="2017-06-14T16:08:29.677000-05:00">
+16月前</span>
+</span>
+</div>
+<span class="vote upvote mark btn-action  fa fa-thumbs-o-up" data-type="upvote" title="赞同" data-post_id="285" data-post-type="0" data-toggle="tooltip" data-placement="top">
+<span class="vote-btn-text zhidao-font">赞
+<span class="count-wrap" style=""><span class="mainpost-count" style="font-size: 13px;">4</span></span></span></span>
+<span class="vote downvote tip btn-action  fa fa-thumbs-o-down" data-type="downvote" title="不赞同" data-post_id="285" data-post-type="0" data-toggle="tooltip" data-placement="top">
+<span class="count-wrap zhidao-font" style="display:none;"></span>
+</span>
+<span class="label label-default view-comment" data-value="285" id="C285" count="5" type="0" countstr="5条评论"><span class="mainpost-cmt-count">5</span> 条评论</span>
+<a tabindex="0" class="btn-action post-action-group" data-toggle="popover" data-trigger="focus" data-html="true" placement="bottom" style="cursor:pointer;margin-left:10px;">
+操作<span class="caret"></span>
+</a>
+<div id="group-post-actions" class="group-post-actions" style="display:none;">
+<ul class="popover-list">
+<li><a onclick="share_popup('/p/285')" class="btn-action"><i class="glyphicon glyphicon-qrcode"></i>分享</a></li>
+<li><a onclick="report_post(event, 285)" class="btn-action"><i class="glyphicon glyphicon-flag"></i>举报</a></li>
+</ul>
+</div>
+<span class="btn-group subscribe-action-group" style="margin-right: 30px;">
+<button type="button" class="post-action-watch-btn btn btn-default btn-xs dropdown-toggle" id="F285" data-toggle="dropdown">
+未关注
+<span class="caret"></span>
+</button>
+<ul class="post-watch-dropdown dropdown-menu dropup" role="menu">
+<li><a url="/local/sub/285/local/">站内信关注</a></li>
+<li><a url="/local/sub/285/email/">邮箱关注</a></li>
+<li><a url="/local/sub/285/nofollow/">不关注</a></li>
+</ul>
+</span>
+</div>
+<div class="post-action-top">
+</div>
+</div>
+<div class="comment_area_wrap" data-pid="285" style=" ">
+<div id="comment_area_285" class="comment comment_area" itemprop="comment">
+</div>
+</div>
+</div>
+</div>
+<div id="num_of_ans" data="3" style="padding: 10px; font-size: 16px; margin-top:50px;">3个回答</div>
+<div style="padding: 0 0 30px 0;">
+<span class="btn-group subscribe-action-group" style="float: right;margin-right: 30px">
+<button type="button" class="post-action-watch-btn btn btn-default btn-xs dropdown-toggle" id="F285" data-toggle="dropdown">
+按质量排序
+<span class="caret"></span>
+</button>
+<ul class="post-sorting-dropdown dropdown-menu dropup" role="menu">
+<li><a url="/p/285/">按质量排序</a></li>
+<li><a url="/p/285/?i=1">按时间排序</a></li>
+</ul>
+</span>
+</div>
+</div>
+</span>
+<div class="answers-wrap">
+<div class="post-answer-wrap" itemscope itemtype="http://schema.org/Answer">
+<div class="post-body-wrap post-body 正常 post-body-wrap-294 clearfix" data-mainpost="294" data-type=1 style="margin-top: 5px;">
+<div class="post vote-box visible-lg visible-md" data-post_id="294">
+<div class="vote mark - tip sym-bookmark off" data-toggle="tooltip" data-placement="top" data-type="bookmark" title="收藏" data-post-type="1" data-post_id="294">
+<i class="fa fa-star-o fa-2x"></i>
+</div>
+
+</div>
+<div>
+<a name="294"></a>
+<div class="content post-content" data="294" style="margin-bottom: 2px;">
+<div class="post-mod-head">
+<div class="post-user-wrapper">
+<span class="post-user-name" uid="117"><a target="_blank" class="aw-user-name" href="/u/慕容一/" data-id="">慕容一</a></span>
+<span class="post-user-intro" title="这个世界多么美好，值得去奋斗。"> | 这个世界多么美好，值得去奋斗。 </span>
+</div>
+<span class="post-detail-user-box col-xs-3 col-md-2 box pull-right text-center" data-toggle="u-popover" data-html="true" placement="bottom" uid="117">
+<a href="/u/慕容一/"><img src="/static/upload/thumb/small50-u-thumb-117717b39285a8d14d09ecf89ef6a3121979c49e198.png" data-alt="https://www.pin-cong.com/static/img/u-thumb-default.png" onerror="load_alt_img(event);"></a>
+</span>
+</div>
+<div class="post-mod-agree">
+16人赞同
+</div>
+<div class="post-list-content">
+<div class="post-text-wrap post-text-wrap-detail">
+<div class="post-text post-text-detail" itemprop="text" post-list-type="detail">
+<p>我觉得分享的动力还是源于人性最基本的一面，比如：</p><p><br></p><p><b>贡献（showcase）自己的专长</b></p><p>每个人都有自己独特的经历，基本上是无法重复的。这里的经历包括学习工作和生活。即使是一个卡车司机，他对一路上发生的事情的知识也会多于常人。知识和其他财富不同，使用知识不让知识减少，反而越用越扎实。而且所谓“偿”也不是立刻得到回报才叫“偿”。通过分享知识让更多人知道你，这难道不是一种“偿”么？你知识再牛逼也只有同行知道，外行靠什么判断？就是知名度，对于掌握知识的人还有设么比分享知识更好的提高知名度的方法呢？<br></p><p><br></p><p><b>对于自己的逻辑锻炼和提高</b></p><p>与别人分享东西能锻炼自己的思维逻辑，你不把关系理顺了说明白了，还怎么分享；还能让学过的已知的东西，清晰化，完善化，完整化，老老实实写下自己的看法，这是一种仪式感，分享写完以后，你会发现受益的首先是自己。</p><p>分享，对自己来说的收获是最大的。也许你曾经掌握过某些知识，也许你曾经经历过某些事件，但是久而久之你会忘记。经过这么一个思考、分享的过程，你会重新收获你曾经了解过的知识点。你分享出什么，你就会再一次掌握什么。</p><p><br></p><p><b>社区的回馈和交流</b></p><p>为什么那么多人喜欢在汽车论坛交流？为什么那么多人会去Stackoverflow交流技术问题？是因为同样的爱好把他们汇聚到了一起。今天你问我答，明天我问你答，互相提高。同时也能认识更多的相同兴趣的人。再比如维基百科，那么多人一起贡献出一个震撼世界的产品出来，的确是值得自豪的。</p><p><br></p><p><b>精神层面的回报</b></p><p>分享者追求的是一种精神层面的回报。比如说，不吐不快。大部分人都会有好为人师的习惯。我掌握这个，而你没掌握这个，那么我告诉你之后我会有成就感。还有就是点赞、评论、收藏、转发等这些虚拟荣誉激励。当我认真的回复发出的瞬间能获得几十甚至几百几千真实网友的赞，我会有更多的动力去创造出更多的内容。毕竟人的本性是需要获得别人的认可，是需要获得别人的赞美的。</p>
+</div>
+</div>
+<div class="gradient">
+<div class="read-more">
+<div class="read-more-text" ">阅读更多<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+</div>
+</div>
+<div class="post-text-foldup">
+ <span>收起</span>
+<i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+</div>
+<a name="cmt_area_294"></a>
+<div class="clearfix">
+<div class="post-action" data='294'>
+<div class="post-action-time">
+<span class="userlink muted btn-gray">
+<span class="btn-gray" itemprop="dateCreated" content="2017-06-16T10:45:17.398477-05:00">
+16月前</span>
+</span>
+</div>
+<span class="vote upvote mark btn-action  fa fa-thumbs-o-up" data-type="upvote" title="赞同" data-post_id="294" data-post-type="1" data-toggle="tooltip" data-placement="top">
+<span class="vote-btn-text zhidao-font">赞
+<span class="count-wrap" style=""><span class="mainpost-count" style="font-size: 13px;">16</span></span></span></span>
+<span class="vote downvote tip btn-action  fa fa-thumbs-o-down" data-type="downvote" title="不赞同" data-post_id="294" data-post-type="1" data-toggle="tooltip" data-placement="top">
+<span class="count-wrap zhidao-font" style=""></span>
+</span>
+<span class="label label-default view-comment" data-value="294" id="C294" count="5" type="1" countstr="5条评论"><span class="mainpost-cmt-count">5</span> 条评论</span>
+<a tabindex="0" class="btn-action post-action-group" data-toggle="popover" data-trigger="focus" data-html="true" placement="bottom" style="cursor:pointer;margin-left:10px;">
+操作<span class="caret"></span>
+</a>
+<div id="group-post-actions" class="group-post-actions" style="display:none;">
+<ul class="popover-list">
+<li><a onclick="share_popup('/p/285?s=294')" class="btn-action"><i class="glyphicon glyphicon-qrcode"></i>分享</a></li>
+<li><a onclick="report_post(event, 294)" class="btn-action"><i class="glyphicon glyphicon-flag"></i>举报</a></li>
+</ul>
+</div>
+</div>
+<div class="post-action-top">
+</div>
+</div>
+<div class="comment_area_wrap" data-pid="294" style=" ">
+<div id="comment_area_294" class="comment comment_area" itemprop="comment">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="post-answer-wrap" itemscope itemtype="http://schema.org/Answer">
+<div class="post-body-wrap post-body 正常 post-body-wrap-1331 clearfix" data-mainpost="1331" data-type=1 style="margin-top: 5px;">
+<div class="post vote-box visible-lg visible-md" data-post_id="1331">
+<div class="vote mark - tip sym-bookmark off" data-toggle="tooltip" data-placement="top" data-type="bookmark" title="收藏" data-post-type="1" data-post_id="1331">
+<i class="fa fa-star-o fa-2x"></i>
+</div>
+
+</div>
+<div>
+<a name="1331"></a>
+<div class="content post-content" data="1331" style="margin-bottom: 2px;">
+<div class="post-mod-head">
+<div class="post-user-wrapper">
+<span class="post-user-name" uid="173"><a target="_blank" class="aw-user-name" href="/u/gledos/" data-id="">gledos</a></span>
+<span class="post-user-intro" title="This story has not finished yet.
+Truth is not revealed.
+And it circulates through an incident.
+It is an infinity loop!"> | This story ha...
+</span>
+</div>
+<span class="post-detail-user-box col-xs-3 col-md-2 box pull-right text-center" data-toggle="u-popover" data-html="true" placement="bottom" uid="173">
+<a href="/u/gledos/"><img src="/static/upload/thumb/small50-u-thumb-173c316678c0e5fff5ef79cf5e5099b5cf3da63a4d9.png" data-alt="https://www.pin-cong.com/static/img/u-thumb-default.png" onerror="load_alt_img(event);"></a>
+</span>
+</div>
+<div class="post-mod-agree">
+4人赞同
+</div>
+<div class="post-list-content">
+<div class="post-text-wrap post-text-wrap-detail">
+<div class="post-text post-text-detail" itemprop="text" post-list-type="detail">
+<p>要考虑历史的进程，研究人性是有局限性的，这个问题还是要结合历史。</p><p>愿意分享知识的前提是非商业署名，没有这样的限制的话愿意分享的人就会少很多（想象一下你在网络上分享的知识被别人拿走不加署名甚至作为商业使用，你的感受吧）。但是非商业署名这种规则并不是凭空出现的，正是“知识共享许可协议”才让互联网能够成为分享知识的地方，比如wiki。CC协议为在保护作者权益的前提下分享知识提供了保障。</p><p><br></p><p>从《<a rel="nofollow" href="https://zh.wikipedia.org/wiki/%E6%95%B8%E5%AD%97%E5%8D%83%E5%B9%B4%E7%89%88%E6%AC%8A%E6%B3%95">千禧年数字版权法</a>》到<a rel="nofollow" href="https://zh.wikipedia.org/wiki/%E5%88%9B%E4%BD%9C%E5%85%B1%E7%94%A8">知识共享</a></p><p>再从《停止网上盗版法》(SOPA)、《保护知识产权法》(PIPA)到<a rel="nofollow" href="https://en.wikipedia.org/wiki/Protests_against_SOPA_and_PIPA">反SOPA和PIPA抗议</a>。最后SOPA和PIPA被无限期搁置。（百度上只能查到百位数的《停止网上盗版法》的信息，要查就去用谷歌查）</p><p>所以无偿分享知识是一种理想主义，答案是为了全人类的未来。(部分自私的人也许无法理解)</p><p><br></p><p>人类知识的脉络就是那些论文、学术期刊等。但是这些被商业机构所掌握。</p><p>推倒知识高墙，这件事一直有人在做，最出名的应该就是<a rel="nofollow" href="https://zh.wikipedia.org/wiki/%E4%BA%9A%E4%BC%A6%C2%B7%E6%96%AF%E6%B2%83%E8%8C%A8">亚伦·斯沃茨</a>了，也就是我的头像。不过这就是另一个故事了（<a rel="nofollow" href="http://www.vancouverobserver.com/world/how-aaron-swartz-paved-way-jack-andrakas-revolutionary-cancer-test" style="background-color: rgb(255, 255, 255);">亚伦·斯瓦兹为杰克·安德拉卡的革命性癌症测试铺平道路</a>）。</p>
+</div>
+</div>
+<div class="gradient">
+<div class="read-more">
+<div class="read-more-text" ">阅读更多<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+</div>
+</div>
+<div class="post-text-foldup">
+<span>收起</span>
+<i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+</div>
+<a name="cmt_area_1331"></a>
+<div class="clearfix">
+<div class="post-action" data='1331'>
+<div class="post-action-time">
+<span class="userlink muted btn-gray">
+<span class="btn-gray" itemprop="dateCreated" content="2017-07-25T22:51:22.197338-05:00">
+15月前</span>
+&#9643 15月前修改过
+</span>
+</div>
+<span class="vote upvote mark btn-action  fa fa-thumbs-o-up" data-type="upvote" title="赞同" data-post_id="1331" data-post-type="1" data-toggle="tooltip" data-placement="top">
+<span class="vote-btn-text zhidao-font">赞
+<span class="count-wrap" style=""><span class="mainpost-count" style="font-size: 13px;">4</span></span></span></span>
+<span class="vote downvote tip btn-action  fa fa-thumbs-o-down" data-type="downvote" title="不赞同" data-post_id="1331" data-post-type="1" data-toggle="tooltip" data-placement="top">
+<span class="count-wrap zhidao-font" style="display:none;"></span>
+</span>
+<span class="label label-default view-comment" data-value="1331" id="C1331" count="3" type="1" countstr="3条评论"><span class="mainpost-cmt-count">3</span> 条评论</span>
+<a tabindex="0" class="btn-action post-action-group" data-toggle="popover" data-trigger="focus" data-html="true" placement="bottom" style="cursor:pointer;margin-left:10px;">
+操作<span class="caret"></span>
+</a>
+<div id="group-post-actions" class="group-post-actions" style="display:none;">
+<ul class="popover-list">
+<li><a onclick="share_popup('/p/285?s=1331')" class="btn-action"><i class="glyphicon glyphicon-qrcode"></i>分享</a></li>
+<li><a onclick="report_post(event, 1331)" class="btn-action"><i class="glyphicon glyphicon-flag"></i>举报</a></li>
+</ul>
+</div>
+</div>
+<div class="post-action-top">
+</div>
+</div>
+<div class="comment_area_wrap" data-pid="1331" style=" ">
+<div id="comment_area_1331" class="comment comment_area" itemprop="comment">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="post-answer-wrap" itemscope itemtype="http://schema.org/Answer">
+<div class="post-body-wrap post-body 正常 post-body-wrap-84634 clearfix" data-mainpost="84634" data-type=1 style="margin-top: 5px;">
+<div class="post vote-box visible-lg visible-md" data-post_id="84634">
+<div class="vote mark - tip sym-bookmark off" data-toggle="tooltip" data-placement="top" data-type="bookmark" title="收藏" data-post-type="1" data-post_id="84634">
+<i class="fa fa-star-o fa-2x"></i>
+</div>
+
+</div>
+<div>
+<a name="84634"></a>
+<div class="content post-content" data="84634" style="margin-bottom: 2px;">
+<div class="post-mod-head">
+<div class="post-user-wrapper">
+<span class="post-user-name" uid="5450"><a target="_blank" class="aw-user-name" href="/u/TB/" data-id="">TB</a></span>
+<span class="post-user-intro" title="不要盡信我的話語，要思考，認同了，然後相信。"> | 不要盡信我的話語，要思考，...
+</span>
+</div>
+<span class="post-detail-user-box col-xs-3 col-md-2 box pull-right text-center" data-toggle="u-popover" data-html="true" placement="bottom" uid="5450">
+<a href="/u/TB/"><img src="/static/upload/thumb/small50-u-thumb-default.png" data-alt="https://www.pin-cong.com/static/img/u-thumb-default.png" onerror="load_alt_img(event);"></a>
+</span>
+</div>
+<div class="post-mod-agree">
+4人赞同
+</div>
+ <div class="post-list-content">
+<div class="post-text-wrap post-text-wrap-detail">
+<div class="post-text post-text-detail" itemprop="text" post-list-type="detail">
+<p>以下僅代表個人觀點~</p><p>如果商業化一點來看待
+</p><p>比如為什麼 Google 要開發 Android 系統給各家手機廠商使用，是為了搶佔市場，沒有比免費又品質好的東西更能快速搶佔市場的了</p><p>以思想家、政治家、或是一般的人們分享其思想觀點，是為了讓其觀點、思想有更多人認可，支持自己的人多了，那就是一種力量</p><p>以個人職能來講，技術性的知識分享，可以獲得成就感、名聲、以及淺在的利益</p><p>最後本人認為還有一點，可以引用中國一句話 "不孝有三、無後為大"</p><p>很多人會理解為 "沒有生個男丁來傳宗後代是最不孝的，對不起列祖列宗"</p><p>本人幾經思考，理解的結論為 "人生在世、<b>這一輩子的價值在於你留下了甚麼給世界</b>"</p><p>如果你留下的是極端思想、殘暴的種子，那影響的就是千萬人的生命</p><p>如果你留下的是這輩子的心血結晶，讓其他人少走彎路，那就能夠使社會進步</p><p>如果你留下的是一個善良的故事，那將會散發到更多人身上</p><p>如果你留下的是博愛、道德、仁義的教誨，那影響的就是一個禮儀之邦</p><p>如果你留下的是智慧、教導人們思考、分辨善惡、洞察事物的能力，那影響的是整個星球千千萬萬的人</p><p>如果...如果你甚麼也沒能留下，那就只好留下一個後人，希望他會給世界留下些甚麼</p>
+</div>
+</div>
+<div class="gradient">
+<div class="read-more">
+<div class="read-more-text" ">阅读更多<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+</div>
+</div>
+<div class="post-text-foldup">
+<span>收起</span>
+<i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+</div>
+<a name="cmt_area_84634"></a>
+<div class="clearfix">
+<div class="post-action" data='84634'>
+<div class="post-action-time">
+<span class="userlink muted btn-gray">
+<span class="btn-gray" itemprop="dateCreated" content="2018-05-19T05:45:19.198972-05:00">
+5月前</span>
+&#9643 5月前修改过
+</span>
+</div>
+<span class="vote upvote mark btn-action  fa fa-thumbs-o-up" data-type="upvote" title="赞同" data-post_id="84634" data-post-type="1" data-toggle="tooltip" data-placement="top">
+<span class="vote-btn-text zhidao-font">赞
+<span class="count-wrap" style=""><span class="mainpost-count" style="font-size: 13px;">4</span></span></span></span>
+<span class="vote downvote tip btn-action  fa fa-thumbs-o-down" data-type="downvote" title="不赞同" data-post_id="84634" data-post-type="1" data-toggle="tooltip" data-placement="top">
+<span class="count-wrap zhidao-font" style="display:none;"></span>
+</span>
+<span class="label label-default view-comment" data-value="84634" id="C84634" count="2" type="1" countstr="2条评论"><span class="mainpost-cmt-count">2</span> 条评论</span>
+<a tabindex="0" class="btn-action post-action-group" data-toggle="popover" data-trigger="focus" data-html="true" placement="bottom" style="cursor:pointer;margin-left:10px;">
+操作<span class="caret"></span>
+</a>
+<div id="group-post-actions" class="group-post-actions" style="display:none;">
+<ul class="popover-list">
+<li><a onclick="share_popup('/p/285?s=84634')" class="btn-action"><i class="glyphicon glyphicon-qrcode"></i>分享</a></li>
+<li><a onclick="report_post(event, 84634)" class="btn-action"><i class="glyphicon glyphicon-flag"></i>举报</a></li>
+</ul>
+</div>
+</div>
+<div class="post-action-top">
+</div>
+</div>
+<div class="comment_area_wrap" data-pid="84634" style=" ">
+<div id="comment_area_84634" class="comment comment_area" itemprop="comment">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="btn btn-cancel btn-action post-detail-loadmore" style="display:none;" data-post-id="285" inverse="0">
+更多</div>
+</div>
+<span id="csrf_token"><input type='hidden' name='csrfmiddlewaretoken' value='HuAwFSRYA44cpTWOfX4gKID4L4rIBR8a' /></span>
+<div style="margin-top: 70px;">
+
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-md-3 sidebar">
+<div class="subs_wrap" style="margin:40px 0px 10px 0;color: #888;height: 70px;font-size: 13px;">
+<div style="margin-bottom: 15px;"><span class="badge" style="position: relative;background: #881622;border-radius: 3px;padding: 1px 2px;left: 1px;top: -2px;">热</span> 邮箱订阅，定期获取最新的翻墙软件
+<div style="margin-top: 5px;">
+<input class="textinput textInput form-control" id="sub_email" name="email" placeholder="E-mail" type="email" value="" style=" width: 75%;float: left; height: 30px;">
+<p id="error_1_id_captcha" class="ac-sub-help help-block help-error" style="display: none;"></p>
+<span class="subs_submit btn  btn-cancel pull-right" style="height: 30px;padding: 4px 9px;">提交</span>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    
+$(document).ready(function () { 
+
+
+
+
+});    
+
+</script>
+<div class="user-detail-action-title btn-action">相关问题 <a href="/local/search/page/"> &raquo;</a></div>
+<div class="more-like-this">
+<div class="more-like-item"><a href="/p/27394">建国前为什么国民党可以被共产党渗透那么多，而不是相反？</a></div><div class="more-like-item"><a href="/p/1363">共产主义可行吗？有没什么致命的弱点？</a></div><div class="more-like-item"><a href="/p/35522">如何评价北京取消互助献血导致大量病人无血可用</a></div><div class="more-like-item"><a href="/p/80567">如何看待和对比中国一带一路和美国二战后的马歇尔计划的异同？</a></div><div class="more-like-item"><a href="/p/60658">无偿献血/有偿献血，那个更合理？</a></div><div class="more-like-item"><a href="/p/91704">品葱的硬伤？</a></div><div class="more-like-item"><a href="/p/111363">“对朝需要支援多少钱？” 正在忙于计算的日本</a></div>
+</div>
+<div class="user-detail-right-action">
+<div class="user-detail-action-title btn-gray">
+<a href="/t/" style="color: #999;">热门话题 &raquo;</a>
+</div>
+<div class="user-detail-action-cnt">
+<div class="user-detail-item">
+ <a class="tag" href="/t/美国/?t=1">美国</a>
+<div class="user-detail-tag-info">
+<span class="btn-gray">94个问题 <span class="tags-watch-count">315</span>关注</span>
+<div class="tags-post-title"><a target="_blank" href="/p/91862/" title="西方意识形态渗透都包括什么，其中究竟有没有我们应该抵制的东西？">西方意识形态渗透都包括什么，其中究竟有没有我们应该抵制的东西？</a></div>
+<div class="tags-post-title"><a target="_blank" href="/p/67469/" title="如何看待川普下令美英法联军攻击叙利亚？">如何看待川普下令美英法联军攻击叙利亚？</a></div>
+<div class="tags-post-title"><a target="_blank" href="/p/29332/" title="如何评价川普第一份国情咨文？">如何评价川普第一份国情咨文？</a></div>
+</div>
+</div>
+<div class="user-detail-item">
+<a class="tag" href="/t/科技/?t=1">科技</a>
+<div class="user-detail-tag-info">
+<span class="btn-gray">77个问题 <span class="tags-watch-count">370</span>关注</span>
+<div class="tags-post-title"><a target="_blank" href="/p/76574/" title="日系手机市场表现为什么全面落后于中韩？">日系手机市场表现为什么全面落后于中韩？</a></div>
+<div class="tags-post-title"><a target="_blank" href="/p/32579/" title="如何评价马斯克将SpaceX的史上最强的火箭成功送上太空？">如何评价马斯克将SpaceX的史上最强的火箭成功送上太空？</a></div>
+<div class="tags-post-title"><a target="_blank" href="/p/21313/" title="日本和俄國,歐洲在互联网创新/技術方面是否已完全落后中,美?">日本和俄國,歐洲在互联网创新/技術方面是否已完全落后中,美?</a></div>
+</div>
+</div>
+<div class="user-detail-item">
+<a class="tag" href="/t/心理学/?t=1">心理学</a>
+<div class="user-detail-tag-info">
+<span class="btn-gray">80个问题 <span class="tags-watch-count">236</span>关注</span>
+<div class="tags-post-title"><a target="_blank" href="/p/6459/" title="知乎上那么多爱国人士不是应该让中国变得更好吗？为什么一揭TG的黑暗一批评TG他们就会反击？">知乎上那么多爱国人士不是应该让中国变得更好吗？为什么一揭TG的黑暗一批评TG他们就会反击？</a></div>
+<div class="tags-post-title"><a target="_blank" href="/p/37790/" title="墙内洗脑久了，看到品葱上各式各样的观点都有很不习惯该怎么办？">墙内洗脑久了，看到品葱上各式各样的观点都有很不习惯该怎么办？</a></div>
+<div class="tags-post-title"><a target="_blank" href="/p/18935/" title="为什么会有人赞美文革？">为什么会有人赞美文革？</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="user-detail-right-action" style="padding:50px 0 20px 0;">
+<div class="user-detail-action-title btn-gray">
+<a href="/columns/" style="color: #999;">专栏文章 &raquo;</a>
+</div>
+<div class="user-detail-action-cnt">
+<div class="user-detail-item" style="padding: 0px;">
+<div class="tags-post-title"><a target="_blank" href="/p/147608" title="集体去美国化---中美贸易摩擦七个月小结">集体去美国化---中美贸易摩擦七个月小结</a> <a target="_blank" href="/u/谈笑风生/"><span style="font-size: 10px;color: #999;">@谈笑风生</span></a></div>
+</div>
+
+<div class="user-detail-item" style="padding: 0px;">
+<div class="tags-post-title"><a target="_blank" href="/p/147537" title="【每日微博谈】十月二十一  习近平刘鹤表态继续支持民营企业发展  美国退出中导条约">【每日微博谈】十月二十一 习近平刘鹤表态继续支持民营企业发展 美国退出中导条约</a> <a target="_blank" href="/u/Daa/"><span style="font-size: 10px;color: #999;">@Daa</span></a></div>
+</div>
+<div class="user-detail-item" style="padding: 0px;">
+<div class="tags-post-title"><a target="_blank" href="/p/147361" title="庆亲王|一只打不死的大老虎">庆亲王|一只打不死的大老虎</a> <a target="_blank" href="/u/weed3000/"><span style="font-size: 10px;color: #999;">@weed3000</span></a></div>
+</div>
+<div class="user-detail-item" style="padding: 0px;">
+<div class="tags-post-title"><a target="_blank" href="/p/147360" title="为什么说清朝几乎无清官?">为什么说清朝几乎无清官?</a> <a target="_blank" href="/u/weed3000/"><span style="font-size: 10px;color: #999;">@weed3000</span></a></div>
+</div>
+<div class="user-detail-item" style="padding: 0px;">
+<div class="tags-post-title"><a target="_blank" href="/p/147143" title="【每日微博谈】十月二十 今日内容十分精彩，不容错过 跟大家聊聊天">【每日微博谈】十月二十 今日内容十分精彩，不容错过 跟大家聊聊天</a> <a target="_blank" href="/u/Daa/"><span style="font-size: 10px;color: #999;">@Daa</span></a></div>
+</div>
+<div class="user-detail-item" style="padding: 0px;">
+<div class="tags-post-title"><a target="_blank" href="/p/146766" title="【每日微博谈】十月十九  人民日报：中国已不屑于报复美国  油价再次上涨“破8”">【每日微博谈】十月十九 人民日报：中国已不屑于报复美国 油价再次上涨“破8”</a> <a target="_blank" href="/u/Daa/"><span style="font-size: 10px;color: #999;">@Daa</span></a></div>
+</div>
+<div class="user-detail-item" style="padding: 0px;">
+<div class="tags-post-title"><a target="_blank" href="/p/146716" title="《中国近代史》 徐中约 港版">《中国近代史》 徐中约 港版</a> <a target="_blank" href="/u/Pygmalion/"><span style="font-size: 10px;color: #999;">@Pygmalion</span></a></div>
+</div>
+<div class="user-detail-item" style="padding: 0px;">
+<div class="tags-post-title"><a target="_blank" href="/p/146700" title="分享近期几个经济事件，背后逻辑呼之欲出">分享近期几个经济事件，背后逻辑呼之欲出</a> <a target="_blank" href="/u/Pygmalion/"><span style="font-size: 10px;color: #999;">@Pygmalion</span></a></div>
+</div>
+</div>
+</div>
+<div class="right-foot btn-gray">
+<a class="btn-gray" target="_blank" href="/p/pool/">问题池</a> &#9643 <a class="btn-gray" target="_blank" href="/protocol/">品葱行为倡议</a> &#9643 © 2017 品葱 &#9643 <a target="_blank" class="btn-gray" href="/p/1622/">品葱反馈/改进贴</a> &#9643 <a class="btn-gray" target="_blank" href="https://twitter.com/CongerPin">官方推特</a> &#9643 <a class="btn-gray" target="_blank" href="/feeds/latest/">rss</a> &#9643 <a class="btn-gray" target="_blank" href="/">联系邮箱 <span class="__cf_email__" data-cfemail="76061f18151918111519180217150236111b171f1a5815191b">[email&#160;protected]</span></a> &#9643 <a class="btn-gray" target="_blank" href="/p/2054/">安全上品葱</a> &#9643 <a class="btn-gray" target="_blank" href="/u/品葱二当家/">新人提问</a> &#9643 <a class="btn-gray" target="_blank" href="/adminpub">管理公示区</a> &#9643 <a class="btn-gray" target="_blank" href='/local/admin_all_p_r/'>举报处理区</a>
+<div class="subs_wrap" style="margin:40px 0px 10px 0;color: #888;height: 70px;font-size: 13px;">
+<div style="margin-bottom: 15px;"><span class="badge" style="position: relative;background: #881622;border-radius: 3px;padding: 1px 2px;left: 1px;top: -2px;">热</span> 邮箱订阅，定期获取最新的翻墙软件
+<div style="margin-top: 5px;">
+<input class="textinput textInput form-control" id="sub_email" name="email" placeholder="E-mail" type="email" value="" style=" width: 75%;float: left; height: 30px;">
+<p id="error_1_id_captcha" class="ac-sub-help help-block help-error" style="display: none;"></p>
+<span class="subs_submit btn  btn-cancel pull-right" style="height: 30px;padding: 4px 9px;">提交</span>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+    
+$(document).ready(function () { 
+
+
+
+
+});    
+
+</script>
+</div>
+</div>
+</div>
+<script src="/static/lib/prism/prism.js" type="text/javascript"></script>
+<div class="row bottom-placeholder">
+<div class="col-sm-12 col-md-12">
+<hr>
+</div>
+</div>
+<div class="row toc">
+</div>
+<div class="row">
+</div>
+</div>
+
+<div class="modal fade" id="small-popup" role="dialog">
+<div class="modal-dialog modal-sm">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title btn-action"></h5>
+</div>
+<div class="modal-body btn-gray">
+<h4></h4>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+<button type="button" class="btn btn-ok btn-primary ">确认</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="small-popup-okonly" role="dialog">
+<div class="modal-dialog modal-sm">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title btn-action"></h5>
+</div>
+<div class="modal-body btn-action">
+<h4></h4>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-ok btn-primary " data-dismiss="modal">确认</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="at-popup" role="dialog">
+<div class="modal-dialog modal-sm">
+<div class="modal-content">
+<div class="modal-header">
+<div class="invite-answer-head">
+<span class="description">您想@谁？</span>
+</div>
+</div>
+<div class="modal-body btn-action">
+<span style="display: inline-block;">@</span>
+<div class="invite-answer-search" style="display: inline-block; width: 90%;">
+<input id="invite_user" placeholder="搜索用户" style="width: 100%;">
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-ok btn-primary " data-dismiss="modal">确认</button>
+<button type="button" class="btn btn-cancel btn-primary " data-dismiss="modal">取消</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="at-popup" role="dialog">
+<div class="modal-dialog modal-sm">
+<div class="modal-content">
+<div class="modal-header">
+<div class="invite-answer-head">
+<span class="description">您想@谁？</span>
+</div>
+</div>
+<div class="modal-body btn-action">
+<span style="display: inline-block;">@</span>
+<div class="invite-answer-search" style="display: inline-block; width: 90%;">
+<input id="invite_user" class="at_user" autofocus="on" placeholder="搜索用户" style="width: 100%;">
+</div>
+</div>
+<div class="modal-footer">
+ <button type="button" class="btn btn-ok btn-primary " data-dismiss="modal">确认</button>
+<button type="button" class="btn btn-cancel btn-primary " data-dismiss="modal">取消</button>
+</div>
+</div>
+</div>
+</div>
+<div class="ObjectCard" style="display: none;">
+<div class="ObjectCard-header">
+<div class="user-pop-info-head">
+<div class="user-pop-img">
+<a href=""><img class="profile_photo_img" width="50" alt="" height="50"></a>
+</div>
+<div class="user-pop-intro">
+<div class="loading"><img src="/static/img/loading.gif"></div>
+<span class="user-pop-name"><a class="user" href=""></a></span>
+<span class="user-pop-profile IdentityCredential"></span>
+</div>
+</div>
+</div>
+<div class="ObjectCard-body" style="display: none;">
+<div class="AboutSection" style="padding-left:3px;">
+<div class="card_stat_list">
+<span class="card_stat_item">
+<span class="card_stat_name">提问</span>
+<span class="card_val card_stat_val_q"></span>
+</span>
+<span class="card_stat_item">
+<span class="card_stat_name">回答</span>
+<span class="card_val card_stat_val_a"></span>
+</span>
+<span class="card_stat_item">
+<span class="card_stat_name">获赞</span>
+<span class="card_val card_stat_val_v"></span>
+</span>
+<span class="card_stat_item">
+<span class="card_stat_name">关注者</span>
+<span class="card_val card_stat_val_w"></span>
+</span>
+</div>
+<div class="card_stat_list">
+<span class="card_stat_item">
+</span>
+<span class="card_action_item" style="right: 0; position: absolute;margin-top: 5px;">
+<span class="card-user-watch btn-cancel  zhidao-font btn-gray6" uid="0">
+<i class="fa fa-plus"></i> 关注
+</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="to-top  glyphicon glyphicon-chevron-up visible-lg visible-md">
+</div>
+<a href="/la/"><div class="to-feed  glyphicon glyphicon-list " style="left:60px;"> </div></a>
+<a href="/i/"><div class="to-feed  glyphicon glyphicon-home "> </div></a>
+</body>
+</html>
