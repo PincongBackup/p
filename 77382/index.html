@@ -307,7 +307,7 @@ __wbhack.init('https://web.archive.org:443/web');
 <span class="post-user-intro" title=""> | </span>
 </div>
 <span class="post-detail-user-box col-xs-3 col-md-2 box pull-right text-center" data-toggle="u-popover" data-html="true" placement="bottom" uid="2844">
-<a href="/web/20181004184643/https://www.pin-cong.com/u/Cat/"><img src="/web/20181004184643im_/https://www.pin-cong.com/static/upload/thumb/small50-u-thumb-default.png" data-alt="https://web.archive.org:443/web/20181004184643/https://www.pin-cong.com/static/img/u-thumb-default.png" onerror="load_alt_img(event);"></a>
+<a href="/web/20181004184643/https://www.pin-cong.com/u/Cat/"><img src="/web/20181004184643im_/https://www.pin-cong.com/static/upload/thumb/small50-u-thumb-default.png" data-alt="https://www.pin-cong.com/static/img/u-thumb-default.png" onerror="load_alt_img(event);"></a>
 </span>
 </div>
 <div class="post-mod-agree">
@@ -316,7 +316,7 @@ __wbhack.init('https://web.archive.org:443/web');
 <div class="post-list-content">
 <div class="post-text-wrap post-text-wrap-detail">
 <div class="post-text post-text-detail" itemprop="text" post-list-type="detail">
-<p>国内的IPv6有两种，一种是教育网IPv6，一种电信联通提供的原生IPv6，教育网相当于一个大内网而且只有学校能用这个先略过不谈，电信联通部分地区已经有原生IPv6支持，但是速度比较慢而且已经有了污染，如果想要通过IPv6翻墙可以考虑使用HE的Tunnelbreaker：https://www.tunnelbroker.net/ 设置IPv6，这种方法的好处是不需要原生IPv6，所有数据通过IPv4承载，而且选择好节点速度是比较快的，缺点是必须要有公网IP，移动就老老实实用SS吧。</p><p><b>第一步</b></p><p><a rel="nofollow" href="https://web.archive.org:443/web/20181004184643/https://www.tunnelbroker.net/">https://www.tunnelbroker.net/</a> 注册登录，点击左侧 Create Regular Tunnel ，在IPv4 Endpoint填入你的公网IP，可以在线查看 <a rel="nofollow" href="https://web.archive.org:443/web/20181004184643/https://www.ipip.net/">https://www.ipip.net/</a> </p><p>接着选择中转服务器，这些服务器全部都由HE提供，流量是不用担心的，但是大部分地区延迟带宽问题都比较大，有Linux环境的可以运行这个脚本跑下延迟：<a rel="nofollow" href="https://web.archive.org:443/web/20181004184643/https://paste.ubuntu.com/p/mtKd47YKTh/">https://paste.ubuntu.com/p/mtKd47YKTh/</a> ，我在用电信，阿姆斯特丹的延迟是最低的，而不是大多数人以为的洛杉矶，事实上因为中美这条线流量过高这条线已经烂了，延迟跳而且带宽也很低，联通请自行测试。</p><p>选择好了就可以点击底部的 Create Tunnel了</p><p><b>第二步</b></p><p>进入 Tunnel Details ，我们需要用到的分别是IPv6 Tunnel下的 Tunnel ID，Server IPv4 Address，Server IPv6 Address，Client IPv6 Address，Routed /48，Anycast IPv6 Caching Nameserver 以及 Advanced栏下的Update Key</p><p><b>第三步</b></p><p>下一步我们就要配置我们的路由器了，我用的是比较流行的路由器固件Padavan，配置起来比较方便，不过一般的路由器固件都会有类似的配置项，大家灵活变通一下：</p><p>IPv6 连接类型：Tunnel 6in4</p><p>6in4 远程端点 (IPv4): 这里填我们选择的中转服务器IP，也就是Server IPv4 Address</p><p>隧道 MTU: 1280</p><p>隧道 TTL: 64</p><p>IPv6 外网地址: 这里填入Client IPv6 Address，注意去除结尾的/64</p><p>IPv6 外网前缀长度: 64</p><p>IPv6 外网默认网关: 填入Server IPv6 Address</p><p>DNSv6 服务器 1: Anycast IPv6 Caching Nameserver</p><p>DNSv6 服务器 2: 2001:4860:4860::8844</p><p>DNSv6 服务器 3: 2001:4860:4860::8888</p><p>IPv6 内网地址: 这里填入Routed/48，注意如果上面的是形如2001:888:8888::/48这种，我们需要填入的是2001:888:8888:1::1</p><p>IPv6 内网前缀长度: 48</p><p>启用 LAN DHCPv6 服务器: Stateless &amp; Stateful</p><p><b>第四步</b></p><p>因为电信联通家用宽带一般都是动态IP，我们需要配置DDNS，Padavan固件自带HE DDNS服务，主机名填入Tunnel ID，用户名填入你注册时的用户名密码填入Update Key</p><p><b>第五步</b></p><p>在DHCP服务中开启DHCPv6服务</p><p><br></p><p>经过以上的设置，应该就可以访问Google，Youtube等等支持IPv6的服务了，具体详情可以通过<a rel="nofollow" href="https://web.archive.org:443/web/20181004184643/http://ipv6-test.com/">http://ipv6-test.com/</a> 查看</p>
+<p>国内的IPv6有两种，一种是教育网IPv6，一种电信联通提供的原生IPv6，教育网相当于一个大内网而且只有学校能用这个先略过不谈，电信联通部分地区已经有原生IPv6支持，但是速度比较慢而且已经有了污染，如果想要通过IPv6翻墙可以考虑使用HE的Tunnelbreaker：https://www.tunnelbroker.net/ 设置IPv6，这种方法的好处是不需要原生IPv6，所有数据通过IPv4承载，而且选择好节点速度是比较快的，缺点是必须要有公网IP，移动就老老实实用SS吧。</p><p><b>第一步</b></p><p><a rel="nofollow" href="https://www.tunnelbroker.net/">https://www.tunnelbroker.net/</a> 注册登录，点击左侧 Create Regular Tunnel ，在IPv4 Endpoint填入你的公网IP，可以在线查看 <a rel="nofollow" href="https://www.ipip.net/">https://www.ipip.net/</a> </p><p>接着选择中转服务器，这些服务器全部都由HE提供，流量是不用担心的，但是大部分地区延迟带宽问题都比较大，有Linux环境的可以运行这个脚本跑下延迟：<a rel="nofollow" href="https://paste.ubuntu.com/p/mtKd47YKTh/">https://paste.ubuntu.com/p/mtKd47YKTh/</a> ，我在用电信，阿姆斯特丹的延迟是最低的，而不是大多数人以为的洛杉矶，事实上因为中美这条线流量过高这条线已经烂了，延迟跳而且带宽也很低，联通请自行测试。</p><p>选择好了就可以点击底部的 Create Tunnel了</p><p><b>第二步</b></p><p>进入 Tunnel Details ，我们需要用到的分别是IPv6 Tunnel下的 Tunnel ID，Server IPv4 Address，Server IPv6 Address，Client IPv6 Address，Routed /48，Anycast IPv6 Caching Nameserver 以及 Advanced栏下的Update Key</p><p><b>第三步</b></p><p>下一步我们就要配置我们的路由器了，我用的是比较流行的路由器固件Padavan，配置起来比较方便，不过一般的路由器固件都会有类似的配置项，大家灵活变通一下：</p><p>IPv6 连接类型：Tunnel 6in4</p><p>6in4 远程端点 (IPv4): 这里填我们选择的中转服务器IP，也就是Server IPv4 Address</p><p>隧道 MTU: 1280</p><p>隧道 TTL: 64</p><p>IPv6 外网地址: 这里填入Client IPv6 Address，注意去除结尾的/64</p><p>IPv6 外网前缀长度: 64</p><p>IPv6 外网默认网关: 填入Server IPv6 Address</p><p>DNSv6 服务器 1: Anycast IPv6 Caching Nameserver</p><p>DNSv6 服务器 2: 2001:4860:4860::8844</p><p>DNSv6 服务器 3: 2001:4860:4860::8888</p><p>IPv6 内网地址: 这里填入Routed/48，注意如果上面的是形如2001:888:8888::/48这种，我们需要填入的是2001:888:8888:1::1</p><p>IPv6 内网前缀长度: 48</p><p>启用 LAN DHCPv6 服务器: Stateless &amp; Stateful</p><p><b>第四步</b></p><p>因为电信联通家用宽带一般都是动态IP，我们需要配置DDNS，Padavan固件自带HE DDNS服务，主机名填入Tunnel ID，用户名填入你注册时的用户名密码填入Update Key</p><p><b>第五步</b></p><p>在DHCP服务中开启DHCPv6服务</p><p><br></p><p>经过以上的设置，应该就可以访问Google，Youtube等等支持IPv6的服务了，具体详情可以通过<a rel="nofollow" href="http://ipv6-test.com/">http://ipv6-test.com/</a> 查看</p>
 </div>
 </div>
 <div class="gradient">
@@ -384,7 +384,7 @@ __wbhack.init('https://web.archive.org:443/web');
 <span class="post-user-intro" title="私、ユーフォが好き！"> | 私、ユーフォが好き！ </span>
 </div>
 <span class="post-detail-user-box col-xs-3 col-md-2 box pull-right text-center" data-toggle="u-popover" data-html="true" placement="bottom" uid="566">
-<a href="/web/20181004184643/https://www.pin-cong.com/u/黄前 久美子/"><img src="/web/20181004184643im_/https://www.pin-cong.com/static/upload/thumb/small50-u-thumb-566de890c950795f2c828148cb9c018280fe72c0568.png" data-alt="https://web.archive.org:443/web/20181004184643/https://www.pin-cong.com/static/img/u-thumb-default.png" onerror="load_alt_img(event);"></a>
+<a href="/web/20181004184643/https://www.pin-cong.com/u/黄前 久美子/"><img src="/web/20181004184643im_/https://www.pin-cong.com/static/upload/thumb/small50-u-thumb-566de890c950795f2c828148cb9c018280fe72c0568.png" data-alt="https://www.pin-cong.com/static/img/u-thumb-default.png" onerror="load_alt_img(event);"></a>
 </span>
 </div>
 <div class="post-mod-agree">
@@ -393,7 +393,7 @@ __wbhack.init('https://web.archive.org:443/web');
 <div class="post-list-content">
 <div class="post-text-wrap post-text-wrap-detail">
 <div class="post-text post-text-detail" itemprop="text" post-list-type="detail">
-<p>在技术上 IPv6 和翻墙难易<b>没有任何关系</b>。过去这些年 IPv6 翻墙比较容易是因为 IPv6 网络用户少，不需要大规模封锁。不过随着<a rel="nofollow" href="https://web.archive.org:443/web/20181004184643/http://www.xinhuanet.com/2017-11/26/c_1122012631.htm">去年年末</a>和<a rel="nofollow" href="https://web.archive.org:443/web/20181004184643/http://www.gov.cn/guowuyuan/2018-05/03/content_5287570.htm">近日</a>中央政府发布的推进 IPv6 部署的文件，未来几年中国的大部分网民都将享受到 IPv6，同时也意味着 IPv6 网络封锁的规格将会升级至如今 IPv4 网络的水平。<br></p>
+<p>在技术上 IPv6 和翻墙难易<b>没有任何关系</b>。过去这些年 IPv6 翻墙比较容易是因为 IPv6 网络用户少，不需要大规模封锁。不过随着<a rel="nofollow" href="http://www.xinhuanet.com/2017-11/26/c_1122012631.htm">去年年末</a>和<a rel="nofollow" href="http://www.gov.cn/guowuyuan/2018-05/03/content_5287570.htm">近日</a>中央政府发布的推进 IPv6 部署的文件，未来几年中国的大部分网民都将享受到 IPv6，同时也意味着 IPv6 网络封锁的规格将会升级至如今 IPv4 网络的水平。<br></p>
 </div>
 </div>
 <div class="gradient">
@@ -461,7 +461,7 @@ __wbhack.init('https://web.archive.org:443/web');
 <span class="post-user-intro" title=""> | </span>
 </div>
 <span class="post-detail-user-box col-xs-3 col-md-2 box pull-right text-center" data-toggle="u-popover" data-html="true" placement="bottom" uid="5202">
-<a href="/web/20181004184643/https://www.pin-cong.com/u/殷笛/"><img src="/web/20181004184643im_/https://www.pin-cong.com/static/upload/thumb/small50-u-thumb-5202101ea597281db15706a9e61a7475e952b12a2b19.png" data-alt="https://web.archive.org:443/web/20181004184643/https://www.pin-cong.com/static/img/u-thumb-default.png" onerror="load_alt_img(event);"></a>
+<a href="/web/20181004184643/https://www.pin-cong.com/u/殷笛/"><img src="/web/20181004184643im_/https://www.pin-cong.com/static/upload/thumb/small50-u-thumb-5202101ea597281db15706a9e61a7475e952b12a2b19.png" data-alt="https://www.pin-cong.com/static/img/u-thumb-default.png" onerror="load_alt_img(event);"></a>
 </span>
 </div>
 <div class="post-mod-agree">
@@ -538,7 +538,7 @@ __wbhack.init('https://web.archive.org:443/web');
 <span class="post-user-intro" title=""> | </span>
 </div>
 <span class="post-detail-user-box col-xs-3 col-md-2 box pull-right text-center" data-toggle="u-popover" data-html="true" placement="bottom" uid="3903">
-<a href="/web/20181004184643/https://www.pin-cong.com/u/hack98/"><img src="/web/20181004184643im_/https://www.pin-cong.com/static/upload/thumb/small50-u-thumb-default.png" data-alt="https://web.archive.org:443/web/20181004184643/https://www.pin-cong.com/static/img/u-thumb-default.png" onerror="load_alt_img(event);"></a>
+<a href="/web/20181004184643/https://www.pin-cong.com/u/hack98/"><img src="/web/20181004184643im_/https://www.pin-cong.com/static/upload/thumb/small50-u-thumb-default.png" data-alt="https://www.pin-cong.com/static/img/u-thumb-default.png" onerror="load_alt_img(event);"></a>
 </span>
 </div>
 <div class="post-mod-agree">
@@ -697,7 +697,7 @@ $(document).ready(function () {
 </div>
 </div>
 <div class="right-foot btn-gray">
-<a class="btn-gray" target="_blank" href="/web/20181004184643/https://www.pin-cong.com/p/pool/">问题池</a> &#9643; <a class="btn-gray" target="_blank" href="/web/20181004184643/https://www.pin-cong.com/protocol/">品葱行为倡议</a> &#9643; © 2017 品葱 &#9643; <a target="_blank" class="btn-gray" href="/web/20181004184643/https://www.pin-cong.com/p/1622/">品葱反馈/改进贴</a> &#9643; <a class="btn-gray" target="_blank" href="https://web.archive.org:443/web/20181004184643/https://twitter.com/CongerPin">官方推特</a> &#9643; <a class="btn-gray" target="_blank" href="/web/20181004184643/https://www.pin-cong.com/feeds/latest/">rss</a> &#9643; <a class="btn-gray" target="_blank" href="/web/20181004184643/https://www.pin-cong.com/">联系邮箱 <span class="__cf_email__" data-cfemail="186871767b77767f7b77766c797b6c587f75797174367b7775">[email&#160;protected]</span></a> &#9643; <a class="btn-gray" target="_blank" href="/web/20181004184643/https://www.pin-cong.com/p/2054/">安全上品葱</a> &#9643; <a class="btn-gray" target="_blank" href="/web/20181004184643/https://www.pin-cong.com/u/品葱二当家/">新人提问</a> &#9643; <a class="btn-gray" target="_blank" href="/web/20181004184643/https://www.pin-cong.com/adminpub">管理公示区</a> &#9643; <a class="btn-gray" target="_blank" href="/web/20181004184643/https://www.pin-cong.com/local/admin_all_p_r/">举报处理区</a>
+<a class="btn-gray" target="_blank" href="/web/20181004184643/https://www.pin-cong.com/p/pool/">问题池</a> &#9643; <a class="btn-gray" target="_blank" href="/web/20181004184643/https://www.pin-cong.com/protocol/">品葱行为倡议</a> &#9643; © 2017 品葱 &#9643; <a target="_blank" class="btn-gray" href="/web/20181004184643/https://www.pin-cong.com/p/1622/">品葱反馈/改进贴</a> &#9643; <a class="btn-gray" target="_blank" href="https://twitter.com/CongerPin">官方推特</a> &#9643; <a class="btn-gray" target="_blank" href="/web/20181004184643/https://www.pin-cong.com/feeds/latest/">rss</a> &#9643; <a class="btn-gray" target="_blank" href="/web/20181004184643/https://www.pin-cong.com/">联系邮箱 <span class="__cf_email__" data-cfemail="186871767b77767f7b77766c797b6c587f75797174367b7775">[email&#160;protected]</span></a> &#9643; <a class="btn-gray" target="_blank" href="/web/20181004184643/https://www.pin-cong.com/p/2054/">安全上品葱</a> &#9643; <a class="btn-gray" target="_blank" href="/web/20181004184643/https://www.pin-cong.com/u/品葱二当家/">新人提问</a> &#9643; <a class="btn-gray" target="_blank" href="/web/20181004184643/https://www.pin-cong.com/adminpub">管理公示区</a> &#9643; <a class="btn-gray" target="_blank" href="/web/20181004184643/https://www.pin-cong.com/local/admin_all_p_r/">举报处理区</a>
 <div class="subs_wrap" style="margin:40px 0px 10px 0;color: #888;height: 70px;font-size: 13px;">
 <div style="margin-bottom: 15px;"><span class="badge" style="position: relative;background: #881622;border-radius: 3px;padding: 1px 2px;left: 1px;top: -2px;">热</span> 邮箱订阅，定期获取最新的翻墙软件
 <div style="margin-top: 5px;">
